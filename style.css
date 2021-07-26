@@ -1,0 +1,46 @@
+body *{
+    border: 1px solid rgba(83, 126, 155, 0.26);
+
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-link {
+    text-align: center;
+}
+
+
+#app-logo-svg {
+    display: flex;
+    height: 24px;
+    width: 24px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+
+    
+}
+#search-form{
+    display: flex;
+    flex-direction: column;
+}
+#search-button{
+    display: flex;
+    justify-content: center;
+
+}
+
+#google-offer{
+    text-align: center;
+    
+}
