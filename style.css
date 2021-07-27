@@ -2,10 +2,21 @@ body *{
     /*border: 1px solid rgba(83, 126, 155, 0.26);*/
 
 }
+body, html {
+    display: flex;
+    flex-direction: column;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+    font-size: 14px;
+	font-family: arial,sans-serif;
+	color: #222;
+
+}
+
 header {
     display: flex;
-    padding-top: 6px;
-    padding-right: 10px;
+    padding: 16px 20px;
     justify-content: right;
     align-items: center;
     align-content: space-between;
@@ -100,4 +111,59 @@ main {
 }
 #search-button > input{
     padding: 7px 17px;
+}
+
+.qarstb {
+	flex-grow: 1;
+    flex-shrink: 0;
+	box-sizing: border-box;
+}
+
+/*    footer              */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-shrink: 0;
+    /*position: absolute;
+    width: 100%;
+    bottom: 0;*/
+    background-color: rgb(243, 243, 243);
+
+    
+}
+
+#country{
+    display: block;
+    margin: 0;
+    /*padding-left: 10px;*/
+    padding: 15px 30px;
+}
+
+footer >nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+.footer-link{
+    display: block;
+    padding: 15px;
+}
+
+#ls-link ,#rs-link{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width:1200px) {
+    footer >nav {
+     justify-content:space-evenly;
+    }
+}
+
+.line{
+    display: block;
+    border-bottom: 1px solid #dadce0;
 }
